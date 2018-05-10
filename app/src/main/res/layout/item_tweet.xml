@@ -24,4 +24,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_username"
         tools:text="Tweet content" />
+
 </android.support.constraint.ConstraintLayout>
