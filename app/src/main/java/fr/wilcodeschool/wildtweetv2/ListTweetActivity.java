@@ -19,8 +19,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 
-import static fr.wilcodeschool.wildtweetv2.MainActivity.EXTRA_FIRSTNAME;
-import static fr.wilcodeschool.wildtweetv2.MainActivity.EXTRA_LASTNAME;
+import static fr.wilcodeschool.wildtweetv2.MainActivity.EXTRA_LOGIN;
+
 
 public class ListTweetActivity extends AppCompatActivity {
 
@@ -29,10 +29,8 @@ public class ListTweetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_tweet);
         Intent intentFromMainActivity = getIntent();
-        String login= intentFromMainActivity.getStringExtra(EXTRA_FIRSTNAME);
-        String lastNameTweet = intentFromMainActivity.getStringExtra(EXTRA_LASTNAME);
-
-        Toast.makeText(this, login+" "+ lastNameTweet, Toast.LENGTH_SHORT).show();
+        String login= intentFromMainActivity.getStringExtra(EXTRA_LOGIN);
+        Toast.makeText(this,"Welcome " + login, Toast.LENGTH_SHORT).show();
 
         FloatingActionButton addButton = findViewById(R.id.action_button_add);
         addButton.setOnClickListener(new View.OnClickListener() {

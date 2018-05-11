@@ -9,4 +9,6 @@
     <string name="textview">TextView</string>
     <string name="error_fill_form">Please fill the form</string>
     <string name="last_tweet">Last Tweet</string>
+    <string name="Tweet_add">Your tweet is add to the list !</string>
+    <string name="fill_login_password">Please fill your Login and your Password</string>
 </resources>

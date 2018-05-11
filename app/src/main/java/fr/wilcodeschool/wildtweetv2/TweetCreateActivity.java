@@ -81,6 +81,7 @@ public class TweetCreateActivity extends AppCompatActivity {
 
                     Intent goToList = new Intent(TweetCreateActivity.this,
                             ListTweetActivity.class);
+                    Toast.makeText(TweetCreateActivity.this, R.string.Tweet_add, Toast.LENGTH_SHORT).show();
                     TweetCreateActivity.this.startActivity(goToList);
 
 

@@ -16,8 +16,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String EXTRA_FIRSTNAME="EXTRA_FIRSTNAME";
-    public static String EXTRA_LASTNAME = "EXTRA_LASTNAME";
+    public static String EXTRA_LOGIN = "EXTRA_LOGIN";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
                 String loginValue= editlogin.getText().toString();
                 EditText editpassword = findViewById(R.id.edit_password);
                 String passwordValue = editpassword.getText().toString();
-                Toast.makeText(MainActivity.this, "Hello " + loginValue+" "+ passwordValue, Toast.LENGTH_LONG).show();
+
                 if (loginValue.isEmpty()||passwordValue.isEmpty()){
-                    Toast.makeText(MainActivity.this,"Please fill your firstname ans lastname", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, R.string.fill_login_password, Toast.LENGTH_SHORT).show();
                 }else{
                     Intent goToTweetlist = new Intent(MainActivity.this,ListTweetActivity.class);
-                    goToTweetlist.putExtra(EXTRA_FIRSTNAME, loginValue);
-                    goToTweetlist.putExtra("lastname", passwordValue);
+                    goToTweetlist.putExtra(EXTRA_LOGIN, loginValue);
+
                     MainActivity.this.startActivity(goToTweetlist);
                 }
             }
