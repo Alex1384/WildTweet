@@ -29,7 +29,7 @@ public class ListTweetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_tweet);
         Intent intentFromMainActivity = getIntent();
-        String login= intentFromMainActivity.getStringExtra(EXTRA_LOGIN);
+        String login = intentFromMainActivity.getStringExtra (EXTRA_LOGIN);
         Toast.makeText(this,"Welcome " + login, Toast.LENGTH_SHORT).show();
 
         FloatingActionButton addButton = findViewById(R.id.action_button_add);
