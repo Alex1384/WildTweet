@@ -1,4 +1,4 @@
-package fr.wilcodeschool.wildtweetv2;
+package fr.wilcodeschool.wildtweet;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

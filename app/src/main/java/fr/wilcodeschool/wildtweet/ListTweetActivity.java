@@ -1,4 +1,4 @@
-package fr.wilcodeschool.wildtweetv2;
+package fr.wilcodeschool.wildtweet;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
@@ -15,11 +15,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Date;
 
-import static fr.wilcodeschool.wildtweetv2.MainActivity.EXTRA_LOGIN;
+import static fr.wilcodeschool.wildtweet.MainActivity.EXTRA_LOGIN;
 
 
 public class ListTweetActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package fr.wilcodeschool.wildtweetv2;
+package fr.wilcodeschool.wildtweet;
 
 import org.junit.Test;
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WildtweetV2</string>
+    <string name="app_name">Wildtweet</string>
     <string name="login">Login</string>
     <string name="fill_your_login">Fill your Login</string>
     <string name="fill_your_password">Fill Your Password</string>
@@ -11,4 +11,7 @@
     <string name="last_tweet">Last Tweet</string>
     <string name="Tweet_add">Your tweet is add to the list !</string>
     <string name="fill_login_password">Please fill your Login and your Password</string>
+    <string name="send_tweet">Send Tweet</string>
+    <string name="content">Content</string>
+    <string name="username">Username</string>
 </resources>

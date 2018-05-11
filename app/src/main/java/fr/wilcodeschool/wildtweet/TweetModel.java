@@ -1,4 +1,4 @@
-package fr.wilcodeschool.wildtweetv2;
+package fr.wilcodeschool.wildtweet;
 
 /**
  * Created by wilder on 18/03/18.
