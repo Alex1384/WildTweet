@@ -26,6 +26,7 @@ public class ListTweetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_tweet);
+
         Intent intentFromMainActivity = getIntent();
         String login = intentFromMainActivity.getStringExtra (EXTRA_LOGIN);
         Toast.makeText(this,"Welcome " + login, Toast.LENGTH_SHORT).show();

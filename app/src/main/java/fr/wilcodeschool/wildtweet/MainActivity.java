@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //initialiser les shared preferences
         final SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
 
-        //récupérer l'username du cache
+        //récupérer l'username du cache(SharePreferences)
         String usernameCache = sharedPref.getString("username","");
         editlogin.setText(usernameCache);
 
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //créer une variable et récuperer l'Id de l'éléments
+
 
                 //créer une variable
                 String loginValue= editlogin.getText().toString();
