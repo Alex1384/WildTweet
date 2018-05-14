@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent goToTweetlist = new Intent(MainActivity.this,ListTweetActivity.class);
                     goToTweetlist.putExtra(EXTRA_LOGIN, wilder.getUsername());
-
+                    Toast.makeText(MainActivity.this, "Welcome " + loginValue, Toast.LENGTH_SHORT).show();
                     MainActivity.this.startActivity(goToTweetlist);
                 }
             }
